@@ -27,8 +27,8 @@ def pTraceR(dl, dr, rhoLR):
         for k in range(j, dl):
             for l in range(0, dr):
                 rhoA[j][k] += rhoLR[j*dr+l][k*dr+l]
-        if j != k:
-            rhoA[k][j] = np.conj(rhoA[j][k])
+            if j != k:
+                rhoA[k][j] = np.conj(rhoA[j][k])
     return rhoA
 
 
